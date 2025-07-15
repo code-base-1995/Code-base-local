@@ -1,0 +1,23 @@
+# Task 3-Code Improvements
+
+These are my suggested improvements for the Inventory Management application:
+
+
+1.** Introduce a Service Interface**
+  -Extract ProductService into an interface for testability and flexibility.
+  
+2.** Use Enum for Availability
+  -Replace String field availability with enum availability { IN_STOCk,OUT_OF_STOCk} to avoid invalid values.
+
+3.**Add unit test cases**
+  -Add JUnit tests for filtering logic and duplicate removal to ensure data accuracy.
+  
+4.**Move Logic to Utility Class**
+  -Move  filtering and duplication logic into a helper class to improve code readability and maintainability.
+  
+5.**Enhance Swagger Documentation**
+  -Use @Parameter,@Tag and better examples in swagger to imporve API clarity.
+  
+6.**Refactor Controller**
+  -Move any growing logic in controller(like filtering )into the service layer for better separation of concerns.
+  
